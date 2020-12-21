@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="drunk tester game. Funny game">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Are You Drunk?</title>
+</head>
+<style>
+    body {
+        background-color: #ff8585;
+    }
+
+    h2,
+    p,
+    h3,
+    h4 {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+    }
+
+    input {
+        outline: none;
+        background-color: yellow;
+        border-color: transparent;
+        height: 45px;
+        font-size: 20px;
+        font-family: 'Lobster', cursive;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="well" style="margin-top: 50px; background-color: yellow;">
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_fhMCjY.json"
+                        background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <h2>Hello There!!</h2>
+            <h3 id="problem"></h3>
+            <div style="text-align: center;">
+                <input type="number" id="inp" placeholder="Type your answer here......">
+                <p onclick="clk()" class="btn" style="border-color: black;">Submit Answer</p>
+            </div>
+        </div>
+    </div>
+<script src="drunk.js"></script>
+</body>
+</html>
